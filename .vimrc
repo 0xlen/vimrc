@@ -7,12 +7,13 @@ syntax on
 set encoding=utf-8
 set fileencodings=utf-8
 
+"using backspace kill indent
+set smarttab
+
 "tab
 set expandtab
 set tabstop=4
-
-"using backspace kill indent
-set smarttab
+set shiftwidth=4
 
 "env
 set backspace=2
