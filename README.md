@@ -29,6 +29,7 @@ Plugin:
 
 - AutoComplPop
 - SnipMate
+- NERD tree
 
 How to use:
 -----------
@@ -39,6 +40,7 @@ How to use:
 - ctrl + n : New tab (and you can type :open FILE to open files)
 - < : Previous tab
 - \> : Next tab
+- F5 enable NERDtree
 
 Other:
 -------

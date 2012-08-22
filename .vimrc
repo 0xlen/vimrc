@@ -24,6 +24,13 @@ set showmatch
 set backspace=indent,eol,start
 set whichwrap=b,s,<,>,[,]
 
+"enable file detect and plugin
+filetype on
+filetype plugin on
+
+"F5 enable NERDtree
+nnoremap <silent> <F5> :NERDTree<CR>
+
 "auto reload using :e
 set autoread
 
