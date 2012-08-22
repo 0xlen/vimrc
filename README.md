@@ -24,6 +24,12 @@ Font:
     cp font/monaco.ttf /usr/share/fonts/truetype/
     fc-cache -f -v
 
+Plugin:
+-------
+
+- AutoComplPop
+- SnipMate
+
 How to use:
 -----------
 
