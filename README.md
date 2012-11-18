@@ -36,6 +36,7 @@ How to use:
 
 - you can type :e to reload file
 - tab auto indent (whether visual or normal mode)
+- inverse tab by using Shift+Tab (Ctrl+D in normal mode)
 - backspace delete indent (insert mode)
 - ctrl + n : New tab (and you can type :open FILE to open files)
 - < : Previous tab

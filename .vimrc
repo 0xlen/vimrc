@@ -48,3 +48,8 @@ map , <ESC>:tabp<CR>
 map . <ESC>:tabn<CR>
 nmap <tab> V>
 vmap <tab> >gv
+
+"shift+tab inverse tab
+"map <S-Tab> <C-d>
+nmap <S-Tab> V<
+vmap <S-Tab> <gv
