@@ -5,7 +5,7 @@ syntax on
 
 "encode
 set encoding=utf-8
-set fileencodings=utf-8
+set fileencodings=utf-8,big5,cp950
 
 "using backspace kill indent
 set smarttab
