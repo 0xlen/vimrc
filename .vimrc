@@ -1,3 +1,6 @@
+"pathogen.vim
+call pathogen#runtime_append_all_bundles()
+
 "style
 colorscheme blink
 set t_Co=256
@@ -24,7 +27,11 @@ set showmatch
 set backspace=indent,eol,start
 set whichwrap=b,s,<,>,[,]
 
-"enable file detect and plugin
+"autocompletepop.vim
+let g:acp_completeOption = '.,w,b,u,t,i,k'
+let g:acp_behaviorSnipmateLength=1
+
+"snipMate.vim
 filetype on
 filetype plugin on
 

@@ -15,7 +15,6 @@ Usage:
 -------
 
     cp -r .vim ~/.vim
-
     cp .vimrc ~/.vimrc
 
 Font:
@@ -27,6 +26,7 @@ Font:
 Plugin:
 -------
 
+- pathogen.vim
 - AutoComplPop
 - SnipMate
 - NERD tree
@@ -45,7 +45,8 @@ How to use:
 
 Other:
 -------
-
+- plugin manage easier
+- code auto-completed with include file (bind snipMate template)
 - expend tab as 4 space
 - auto indent
 - searching before full type
