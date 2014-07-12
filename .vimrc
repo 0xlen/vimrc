@@ -1,14 +1,21 @@
-"pathogen.vim
-call pathogen#runtime_append_all_bundles()
-
-"style
-colorscheme blink
-set t_Co=256
-syntax on
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+filetype off
+"call pathogen#incubate()
+filetype plugin on
+filetype plugin indent on
+call pathogen#infect('bundle/{}')
+call pathogen#helptags()
 
 "encode
 set encoding=utf-8
 set fileencodings=utf-8,big5,cp950
+
+if has("gui_win32")
+	"gVim coding & menu troubleshooting
+	set termencoding=utf-8
+	source $VIMRUNTIME/delmenu.vim
+	lang messages zh_TW.utf-8
+endif
 
 "using backspace kill indent
 set smarttab
@@ -19,44 +26,50 @@ set tabstop=4
 set shiftwidth=4
 
 "env
+set autochdir
+set laststatus=2   " Always show the statusline
+set nocompatible
+set nu
+set ru
 set backspace=2
 set autoindent
 set showmatch
-
-"backspace
-set backspace=indent,eol,start
-set whichwrap=b,s,<,>,[,]
-
-"autocompletepop.vim
-let g:acp_completeOption = '.,w,b,u,t,i,k'
-let g:acp_behaviorSnipmateLength=1
-
-"snipMate.vim
-filetype on
-filetype plugin on
-
-"F5 enable NERDtree
-nnoremap <silent> <F5> :NERDTree<CR>
-
-"auto reload using :e
+set title
+set splitright
+set splitbelow
 set autoread
+set wrap
+set ignorecase   " ignore case as searching
 
-"searching before full type
-set is
+syntax on                             " syntax highlight
+set hlsearch                          " search highlighting
+set incsearch                         " incremental search
+set guifont=Monaco:h10
+syntax enable
+set t_Co=256
+let g:zenburn_high_Contrast=1
+try
+  colorscheme zenburn
+catch
+endtry
 
-"ruler , number , mode
-set ru
-set showmode
-set nu
+let g:Powerline_symbols = 'fancy'
+
 
 "map
 map <C-n> <ESC>:tabnew<CR>
+"map <C-w> <ESC>:q!<CR>
 map , <ESC>:tabp<CR>
 map . <ESC>:tabn<CR>
-nmap <tab> V>
-vmap <tab> >gv
+
+"split view quick resize
+nmap <C-Right> <C-w>>
+nmap <C-Left> <C-w><
+nmap <C-Up> <C-w>+
+nmap <C-Down> <C-w>-
 
 "shift+tab inverse tab
-"map <S-Tab> <C-d>
-nmap <S-Tab> V<
-vmap <S-Tab> <gv
+nmap <TAB> v>
+nmap <S-TAB> v<
+vmap <TAB> >gv
+vmap <S-TAB> <gv
