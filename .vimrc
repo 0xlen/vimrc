@@ -44,8 +44,6 @@ set ignorecase   " ignore case as searching
 syntax on                             " syntax highlight
 set hlsearch                          " search highlighting
 set incsearch                         " incremental search
-set guifont=Monaco:h10
-syntax enable
 set t_Co=256
 let g:zenburn_high_Contrast=1
 try
@@ -53,14 +51,15 @@ try
 catch
 endtry
 
-let g:Powerline_symbols = 'fancy'
-
 
 "map
 map <C-n> <ESC>:tabnew<CR>
 "map <C-w> <ESC>:q!<CR>
 map , <ESC>:tabp<CR>
 map . <ESC>:tabn<CR>
+"map <A-,> <ESC>:bp<CR>
+"map <A-.> <ESC>:bn<CR>
+"map <A-d> <ESC>:bd<CR>
 
 "split view quick resize
 nmap <C-Right> <C-w>>

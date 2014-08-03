@@ -223,7 +223,7 @@ snippet class
 	/**
 	 * ${1}
 	 */
-	class ${2:`vim_snippets#Filename()`}
+	class ${2}
 	{
 		${3}
 		/**
@@ -598,3 +598,86 @@ snippet tc
 		${0:code}
 	}
 
+# Codeigniter
+snippet this
+	$this->${1:model/controller}->${2:method}(${3:array});
+
+snippet loadview
+	$this->load->view('${1:view}', ${2:$data});
+	${3}
+
+snippet loadmodel
+	$this->load->model('${1:model}', '${2:rename}');
+	${3}
+
+snippet loadlib
+	$this->load->library('${1:lib}');
+	${2}
+
+snippet classm
+	<?php
+	/*
+	* ${1:Describe the model's purpose}
+	*/
+	
+	class ${2:model name} extends CI_Model
+	{
+		function __construct()
+		{
+			parent::__construct();
+		}
+		${3:// Code...}
+	}
+
+snippet classc
+	<?php
+	/*
+	* ${1:Describe the controller's purpose}
+	*/
+	
+	class ${2:controller name} extends CI_Controller
+	{
+		function __construct()
+		{
+			parent::__construct();
+		}
+		${3:// Code...}
+	}
+
+snippet formrule
+	$this->form_validation->set_rules('${1:field name}','${2:human name}', '${3:rules}');
+
+# Get query
+snippet dbget
+	$q = $this->db->get('${1:table}');
+
+# Get_where query
+snippet dbgetwhere
+	$q = $this->db->get_where('${1:table}', array('${2:field}' => $${3:input}));
+
+# Select
+snippet dbselect
+	$this->db->select('${1:fields}');
+
+# Where
+snippet dbwhere
+	$this->db->where('${1:field}', $${2:input});
+
+# Insert
+snippet dbinsert
+	$this->db->insert('${1:table}', $${2:array});
+
+# Update
+snippet dbupdate
+	$this->db->update('${1:table}', $${2:array});
+
+# Delete
+snippet dbdelete
+	$this->db->delete('${1:table}', $${2:array});
+
+# Site URL
+snippet surl
+	<?php echo site_url("${1:segments}"); ?>${2}
+# Base URL
+snippet burl
+	<?php echo base_url(); ?>${1}
