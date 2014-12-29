@@ -25,10 +25,14 @@ How to apply:
 -------
 
     Linux:
+        cd ~
         git clone https://github.com/0xlen/vimrc.git
         cd vimrc
-        ln -s .vimrc ~/.vimrc
-        ln -s .vim ~/.vim
+        ln -s ~/vimrc/.vimrc ~/.vimrc
+        ln -s ~/vimrc/.vim ~/.vim
+
+        chmod +x update.sh
+        ./update.sh
 
 Font Installation (ubuntu):
 -----
