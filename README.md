@@ -29,6 +29,9 @@ How to apply:
         cd vimrc
         ln -s .vimrc ~/.vimrc
         ln -s .vim ~/.vim
+        
+        chmod +x ./update.sh
+        ./update.sh
 
 Font Installation (ubuntu):
 -----
