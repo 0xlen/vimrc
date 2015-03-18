@@ -55,3 +55,6 @@
 [submodule ".vim/bundle/vim-blade"]
 	path = .vim/bundle/vim-blade
 	url = https://github.com/xsbeats/vim-blade
+[submodule ".vim/bundle/vimproc.vim"]
+	path = .vim/bundle/vimproc.vim
+	url = https://github.com/Shougo/vimproc.vim.git
