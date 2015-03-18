@@ -26,7 +26,7 @@ set tabstop=4
 set shiftwidth=4
 
 "env
-set autochdir
+"set autochdir      " Conflict when using vimshell
 set laststatus=2   " Always show the statusline
 set nocompatible
 set nu
