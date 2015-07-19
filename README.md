@@ -15,6 +15,7 @@ Overview:
 
 - File Change & Syatax checking highlight
 - Useful keybind
+- Few useful color scheme (jellybeans)
 
 ScreenShot:
 -----------
@@ -58,11 +59,14 @@ Plugins what I installed:
 - [vim-signify/](https://github.com/mhinz/vim-signify)
 - [vim-snipmate/](https://github.com/garbas/vim-snipmate)
 - [vim-surround/](https://github.com/tpope/vim-surround)
+- [node.vim/](https://github.com/moll/vim-node)
+- [tagbar/](https://github.com/majutsushi/tagbar)
 
 Key shortcuts:
 -----------
 
 - (F2): Nerdtree toggle
+- (F8): tagbar
 - (TAB & SHIFT+TAB): can change indent (on normal & visual mode)
 - (CTRL+P & CTRL+G open/close ctrlp.vim)
 

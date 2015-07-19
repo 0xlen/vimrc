@@ -45,9 +45,9 @@ syntax on                             " syntax highlight
 set hlsearch                          " search highlighting
 set incsearch                         " incremental search
 set t_Co=256
-let g:zenburn_high_Contrast=1
+"let g:zenburn_high_Contrast=1
 try
-  colorscheme zenburn
+  colorscheme jellybeans
 catch
 endtry
 
