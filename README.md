@@ -66,6 +66,7 @@ Key shortcuts:
 -----------
 
 - (F2): Nerdtree toggle
+- (F3): call AutoFormat to format code (like AStyle formatter do)
 - (F8): tagbar
 - (F12/Shift-F12): show/trail unwanted whitespace
 - (TAB & SHIFT+TAB): can change indent (on normal & visual mode)
