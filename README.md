@@ -67,6 +67,7 @@ Key shortcuts:
 
 - (F2): Nerdtree toggle
 - (F8): tagbar
+- (F12/Shift-F12): show/trail unwanted whitespace
 - (TAB & SHIFT+TAB): can change indent (on normal & visual mode)
 - (CTRL+P & CTRL+G open/close ctrlp.vim)
 
