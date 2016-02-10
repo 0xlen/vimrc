@@ -1,10 +1,10 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
-filetype off
 "call pathogen#incubate()
-filetype plugin on
-filetype plugin indent on
 call pathogen#infect('bundle/{}')
 call pathogen#helptags()
+
+"filetype off
+filetype plugin indent on
 
 "encode
 set encoding=utf-8
@@ -51,6 +51,16 @@ try
 catch
 endtry
 
+"completion
+setl omnifunc=nullcomplete#Complete
+autocmd FileType * setl omnifunc=nullcomplete#Complete
+autocmd FileType python setl omnifunc=pythoncomplete#Complete
+autocmd FileType javascript setl omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html setl omnifunc=htmlcomplete#CompleteTags noci
+autocmd FileType css setl omnifunc=csscomplete#CompleteCSS noci
+autocmd FileType xml setl omnifunc=xmlcomplete#CompleteTags
+autocmd FileType php setl omnifunc=phpcomplete#CompletePHP
+autocmd FileType c setl omnifunc=ccomplete#Complete
 
 "map
 map <C-n> <ESC>:tabnew<CR>
