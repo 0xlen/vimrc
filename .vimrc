@@ -1,12 +1,47 @@
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-"call pathogen#incubate()
-call pathogen#infect('bundle/{}')
-call pathogen#helptags()
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-"filetype off
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" Enable vundle
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'kien/ctrlp.vim'
+Plugin 'vim-scripts/matchit.zip'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tomtom/tlib_vim'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tpope/vim-ragtag'
+Plugin 'mhinz/vim-signify'
+Plugin 'garbas/vim-snipmate'
+Plugin 'tpope/vim-surround'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'tpope/vim-fugitive'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'scrooloose/syntastic'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'hdima/python-syntax'
+Plugin 'xsbeats/vim-blade'
+Plugin 'Shougo/vimproc.vim'
+Plugin 'Shougo/vimshell.vim'
+Plugin 'majutsushi/tagbar'
+Plugin 'moll/vim-node'
+Plugin 'vim-scripts/AutoComplPop'
+Plugin 'ervandew/supertab'
+Plugin 'shawncplus/phpcomplete.vim'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'Chiel92/vim-autoformat'
+Plugin 'mattn/emmet-vim'
+
+call vundle#end()
+
 filetype plugin indent on
 
-"encode
+" encode
 set encoding=utf-8
 set fileencodings=utf-8,big5,cp950
 
@@ -17,7 +52,7 @@ if has("gui_win32")
 	lang messages zh_TW.utf-8
 endif
 
-"using backspace kill indent
+" using backspace kill indent
 set smarttab
 
 "tab
