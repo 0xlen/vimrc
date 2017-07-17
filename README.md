@@ -29,11 +29,9 @@ How to apply:
         cd ~
         git clone https://github.com/0xlen/vimrc.git
         cd vimrc
-        ln -s ~/vimrc/.vimrc ~/.vimrc
-        ln -s ~/vimrc/.vim ~/.vim
 
-        chmod +x update.sh
-        ./update.sh
+        chmod +x install.sh
+        ./install.sh
 
 Font Installation (ubuntu):
 -----
