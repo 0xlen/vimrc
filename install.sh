@@ -5,4 +5,10 @@ git clone https://github.com/VundleVim/Vundle.vim.git .vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 
 # Install Exuberant ctags for tagbar
-sudo apt-get install -y ctags
+if [[ `uname` == 'Darwin' ]]; then
+    # MacOS
+    brew install ctags
+else
+    # Linux
+    sudo apt-get install -y ctags
+fi
