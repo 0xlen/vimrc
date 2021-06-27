@@ -117,3 +117,6 @@ nmap <TAB> v>
 nmap <S-TAB> v<
 vmap <TAB> >gv
 vmap <S-TAB> <gv
+
+"Fix legacy parser warning for snipMate
+let g:snipMate = { 'snippet_version' : 1 }
